@@ -1,0 +1,40 @@
+{
+  "name": "tmdb-api-js",
+  "type": "module",
+  "version": "0.0.4",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "description": "JavaScript wrapper for The Movie Database API",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs"
+  },
+  "scripts": {
+    "build": "bun run build.ts",
+    "prepublishOnly": "bun run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "tmdb",
+    "api",
+    "wrapper",
+    "typescript"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/qleksa/tmdb-api-js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qleksa/tmdb-api-js.git"
+  },
+  "bugs": "https://github.com/qleksa/tmdb-api-js/issues",
+  "author": "Aleksandar Petrovic <qleksa@gmail.com>",
+  "devDependencies": {
+    "bun-plugin-dts": "^0.3.0",
+    "@types/bun": "^1.2.4",
+    "typescript": "^5.8.2"
+  }
+}
