@@ -12,5 +12,5 @@ class TMDBClient extends Client implements TMDBClientInterface {
     }
 }
 
-export type { TvResponse } from "@/types";
+export type { TvResponse } from "@/tv/types";
 export default TMDBClient;

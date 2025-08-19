@@ -7,10 +7,10 @@ class Client implements ClientInterface {
     apiKey: string;
     baseUrl: string;
 
-    constructor(apiKey: string, baseUrl?: string, language?: string) {
-        this.language = language ?? TMDB_LANGUAGE;
+    constructor(apiKey: string, baseUrl: string = TMDB_BASE_API_URL, language: string = TMDB_LANGUAGE) {
+        this.language = language;
         this.apiKey = apiKey;
-        this.baseUrl = baseUrl ?? TMDB_BASE_API_URL;
+        this.baseUrl = baseUrl;
     }
 
     async get<T>(path: string) : Promise<any> {
